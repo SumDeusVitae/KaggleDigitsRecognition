@@ -1,17 +1,12 @@
 import numpy as np
 import pandas as pd
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix
-import itertools
 from keras.utils import to_categorical
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Flatten, MaxPool2D, Conv2D, BatchNormalization
-from keras.preprocessing.image import ImageDataGenerator
+from keras.layers import Conv2D, BatchNormalization, MaxPool2D, Flatten, Dense, Dropout
 from keras.optimizers import RMSprop
 from keras.callbacks import ReduceLROnPlateau
+from keras.preprocessing.image import ImageDataGenerator
 
 np.random.seed(1)
 #  Loading data
